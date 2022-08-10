@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package main;
+
+message DashBoardHiveData {
+    string Address = 1;
+    string Method = 2;
+    string Protocol = 3;
+    string header = 4;
+    string RequestBody = 5;
+    string ProtocolBody = 6;
+    string ResponseBody = 7;
+    string params = 8;
+}
+
+// protoc --dart_out=./ --plugin=protoc-gen-dart=$HOME/.pub-cache/bin/protoc-gen-dart ./idyllic.proto

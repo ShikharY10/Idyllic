@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+# This file was created by pub v2.18.0-271.4.beta.
+# Package: protoc_plugin
+# Version: 20.0.0
+# Executable: protoc-gen-dart
+# Script: protoc_plugin
+if [ -f /home/shikhary10/.pub-cache/global_packages/protoc_plugin/bin/protoc_plugin.dart-2.18.0-271.4.beta.snapshot ]; then
+  dart "/home/shikhary10/.pub-cache/global_packages/protoc_plugin/bin/protoc_plugin.dart-2.18.0-271.4.beta.snapshot" "$@"
+  # The VM exits with code 253 if the snapshot version is out-of-date.
+  # If it is, we need to delete it and run "pub global" manually.
+  exit_code=$?
+  if [ $exit_code != 253 ]; then
+    exit $exit_code
+  fi
+  dart pub global run protoc_plugin:protoc_plugin "$@"
+else
+  dart pub global run protoc_plugin:protoc_plugin "$@"
+fi
+
