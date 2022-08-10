@@ -15,12 +15,12 @@ slots:
     
 apps:
   idyllic:
-    command: super_cool_app
+    command: idyllic
     extensions: [flutter-master] # Where "master" defines which Flutter channel to use for the build
     plugs:
     - network
     slots:
-      - dbus-Idyllic
+      - dbus-idyllic
 parts:
   idyllic:
     source: .
