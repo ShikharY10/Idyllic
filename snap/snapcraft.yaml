@@ -5,16 +5,16 @@ description: Support Json and protobuf response content-type
 
 confinement: strict
 base: core18
-grade: beta
+grade: devel
 
 slots:
-  dbus-Idyllic: # adjust accordingly to your app name
+  dbus-idyllic: # adjust accordingly to your app name
     interface: dbus
     bus: session
     name: org.bar.super_cool_app # adjust accordingly to your app name and
     
 apps:
-  Idyllic:
+  idyllic:
     command: super_cool_app
     extensions: [flutter-master] # Where "master" defines which Flutter channel to use for the build
     plugs:
@@ -22,7 +22,7 @@ apps:
     slots:
       - dbus-Idyllic
 parts:
-  Idyllic:
+  idyllic:
     source: .
     plugin: flutter
     flutter-target: lib/main.dart # The main entry-point file of the application

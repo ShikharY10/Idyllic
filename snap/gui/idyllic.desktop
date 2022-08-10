@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=idyllic
+Comment=API testing tool
+Exec=idyllic 
+Icon=${SNAP}/meta/gui/super-cool-app.png # replace name to your app name
+Terminal=false
+Type=Application
+Categories=Education; #adjust accordingly your snap category
